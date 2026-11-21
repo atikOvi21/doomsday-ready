@@ -67,12 +67,17 @@ The diagram describes the intended data model and may be updated to match the fi
 
 ## Getting started
 
-Setup and run instructions will be added after the application structure and scripts are in place.
+### Run the API and PostgreSQL with Docker
 
+From the project root:
+
+````powershell
+docker compose up --build
+
+
+
+```markdown
 ## AI use
 
-I used ChatGPT to clarify the assessment requirements, discuss a project structure and work plan, and draft this starter README and `.gitignore`. I will update this section to describe any further AI assistance accurately. I will write and verify the rewatch-order, circular-dependency, and minimum-bundle logic myself, as required by the assessment.
-
-## Assessment material
-
-The assessment PDF is kept outside this repository. The project README records the requirements relevant to the implementation.
+I used AI to discuss the project plan and structure, initial documentation and frontend code based on the supplied design. I reviewed and manually tested the resulting application. I implemented and verified the rewatch-order, circular-dependency, and minimum-bundle logic myself, as required by the assessment.
+````
