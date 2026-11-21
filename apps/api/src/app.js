@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
 import healthRouter from "./routes/health.routes.js";
-
+import moviesRouter from "./routes/movies.routes.js";
+import rewatchRouter from "./routes/rewatch.routes.js";
 const app = express();
 
 app.use(
@@ -12,6 +13,8 @@ app.use(
 app.use(express.json());
 
 app.use("/api", healthRouter);
+app.use("/api", moviesRouter);
+app.use("/api", rewatchRouter);
 
 app.use((err, req, res, next) => {
   console.error(err);
